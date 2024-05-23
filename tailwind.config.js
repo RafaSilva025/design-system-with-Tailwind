@@ -11,6 +11,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      mobile: 'var(--screen-mobile)',
+      tablet: 'var(--screen-tablet)',
+      desktop: 'var(--screen-desktop)',
+      tv: 'var(--screen-tv)',
+    },
     extend: {
       colors: {
         primary: toRgba('--primary'),
@@ -30,8 +36,17 @@ module.exports = {
         'text-tertiary': toRgba('--text-tertiary'),
         'text-disabled': toRgba('--text-disabled'),
       },
-            
-//código omitido
+      boxShadow: {
+        sm: 'var(--shadow-sm)',
+        md: 'var(--shadow-md)',
+        lg: 'var(--shadow-lg)',
+        focus: 'var(--shadow-focus)',
+        outline: 'var(--shadow-outline)',
+        'button-focus': 'var(--shadow-button-focus)',
+      },
+      blur: {
+        default: 'var(--blur)'
+      }  
     },
         
   },
