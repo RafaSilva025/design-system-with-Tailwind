@@ -9,7 +9,7 @@ module.exports = {
     
     extend: {
       colors: {
-        primary: 'var(--primary)'
+        primary: ({ opacityValue }) => `rgba(var(--primary), ${opacityValue})`
       },
     
     },
