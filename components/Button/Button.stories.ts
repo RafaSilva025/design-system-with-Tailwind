@@ -4,8 +4,7 @@ import Button, { ButtonProps } from "./Button"
 import { title } from "process"
 
 const meta: Meta<ButtonProps> = {
-    title: 'Button',
-    tags: ['autodocs'],
+    title: 'Molecules/Button',
     component: Button, 
     argTypes: {}
 }
