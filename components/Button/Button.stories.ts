@@ -64,3 +64,27 @@ export const Primary: StoryObj<ButtonProps> = {
       variant: 'secondary'
     }
   }
+
+  export const Tertiary: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      variant: 'tertiary'
+    }
+  }
+
+  export const TertiaryDisabled: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      variant: 'tertiary',
+      disabled: true
+    }
+  }
+
+  export const VioletTertiary: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      className: 'theme-violet',
+      variant: 'tertiary'
+    }
+  }
+  

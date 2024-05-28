@@ -5,14 +5,14 @@ export type ButtonProps = {
   
   function getVariant(variant: ButtonProps['variant'], disabled: ButtonProps['disabled']) {
     switch (variant) {
-      case 'primary':
-        return disabled ? 'bg-disabled text-disabled' : 'bg-primary text-white'
+        case 'primary':
+          return disabled ? 'bg-disabled text-disabled' : 'bg-primary text-white'
       case 'secondary':
         return disabled ? 'bg-disabled text-disabled' : 'bg-quaternary text-primary'
-      case 'tertiary':
+        case 'tertiary':
       default:
-        return disabled ? '' : ''
-    }
+        return disabled ? 'text-disabled' : 'text-primary'
+    }    
   }
   
   const Button = ({ variant = 'primary', children, className, disabled, ...rest }: ButtonProps) => {
